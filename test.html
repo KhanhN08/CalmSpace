@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mental Healthcare Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/test.css">
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video id="background-video" autoplay muted loop>
+        <source src="video/Test.mp4" type="video/mp4">
+    </video>
+    
+    <div class="main-section grid-container">
+        <div class="guide"></div>
+        <div class="container">
+            <div class="progress-container">
+                <div class="progress" id="progress">
+                    <div class="progress-bar" id="progress-bar"></div>
+                    <!-- <div class="tooltip" id="tooltip">1</div> -->
+                </div>
+                <div class="progress-text" id="progress-text">0/21</div>
+            </div>
+            <div class="question-container" id="question-container">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+            <div class="buttons">
+                <button id="finish-button" class="button1">Finish</button>
+                <button id="reset-button" class="button2">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Guide Overlay -->
+    <div id="interactive-guide" class="interactive-guide">
+        <div class="guide-step">
+            <div id="highlight-area" class="highlight-area"></div>
+            <div id="guide-instructions" class="guide-instructions">
+                <p id="guide-text"></p>
+                <div class="guide-buttons">
+                    <button id="next-button" class="button3">Next</button>
+                    <button id="close-guide" class="button4">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="srcipts/test.js"></script>
+    <script src="srcipts/homepage.js"></script>
+</body>
+</html>
